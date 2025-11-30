@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Mini Projet football</title>
+</head>
+<body>
+    <div class="contan-fluid mt-4">
+
+        <div class="container">
+            <h3>Gestion des joeurs</h3>
+
+            <form id="formmulaire">
+                <label for="joeurs" class="form-label">Name Joeur : </label>
+                <input class="form-control" type="text" name="joeur" id="joeurs" placeholder="name joeur">
+                <label for="post" class="form-label">Post : </label>
+                <select class="form-select" name="post" id="post">
+                    <option value="GB">GB</option>
+                    <option value="DD">DD</option>
+                    <option value="DG">DG</option>
+                    <option value="DC">DC</option>
+                    <option value="MD">MD</option>
+                    <option value="MC">MC</option>
+                    <option value="MO">MO</option>
+                    <option value="AG">AG</option>
+                    <option value="AD">AD</option>
+                    <option value="AC">AC</option>
+                </select>
+                <button type="submit" class="btn btn-primary mt-3">Ajouter</button>
+            </form>
+            <div class="row mt-3 filtre">
+                 <input class="col-6 form-control" type="text" id="recherche" name="recherche" placeholder="entre the post to search">
+                <button class="col-3 btn-success mt-2 rounded-3" id="filtre">Rechercher</button>
+
+            </div>
+        </div>
+
+        <div id="contentjoeurs" class="row container mt-3 rounded-3">
+          
+        </div>
+
+
+    </div>
+
+
+
+    <script src="miniprojetavence.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    
+</body>
+</html>
